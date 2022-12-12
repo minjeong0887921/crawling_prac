@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from movies.models import Movies, Actors
+from parsed_data.models import Movies, Actors
 
 
 @admin.register(Movies)

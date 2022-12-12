@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    "movies.apps.MoviesConfig",
+    "parsed_data.apps.ParseDataConfig",
 
     "rest_framework",
 

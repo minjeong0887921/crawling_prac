@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 import time 
 
-from movies.models import Movies, Actors
+from parsed_data.models import Movies, Actors
 
 import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE","mysite.settings")
