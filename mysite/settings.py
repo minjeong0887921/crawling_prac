@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    "parsed_data.apps.ParseDataConfig",
+    "parsing.apps.ParsingConfig",
 
     "rest_framework",
 
