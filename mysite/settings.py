@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     "parsing.apps.ParsingConfig",
+    "rating.apps.RatingConfig",
 
     "rest_framework",
 

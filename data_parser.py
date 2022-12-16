@@ -11,14 +11,12 @@ django.setup()
 
 from parsing.models import MovieData, ActorData
 
-# 웹드라이버 파일의 경로 
 
 def movie_parsing():
     driver = webdriver.Chrome('/path/to/chromedriver') 
 
     driver.get("https://movie.naver.com/movie/running/current.naver") 
 
-    # 페이지 로딩 기다리기
     time.sleep(5)   
 
     req = driver.page_source 
