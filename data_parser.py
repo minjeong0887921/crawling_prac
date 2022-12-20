@@ -28,8 +28,8 @@ def movie_parsing():
         image = movie.select('div > a > img')[0]['src']
         title = movie.select('div > a > img')[0]['alt']
         director = movie.select('dl > dd:nth-child(3) > dl > dd:nth-child(4) > span > a')[0].text
-        point = movie.select('dl > dd.star > dl > dd:nth-child(2) > div > a > span.num')[0].text
-        _movie = Movie(title=title, director=director, image=image, point=float(point))
+        rating = movie.select('dl > dd.star > dl > dd:nth-child(2) > div > a > span.num')[0].text
+        _movie = Movie(title=title, director=director, image=image, rating=float(rating))
         _movie.save()
 
         casts = movie.select('dl > dd:nth-child(3) > dl > dd:nth-child(6) > span > a')

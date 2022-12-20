@@ -6,7 +6,7 @@ from parsing.models import Movie, Actor
 
 @admin.register(Movie)
 class MoviesAdmin(admin.ModelAdmin):
-    list_display = ('_image', 'title', 'point', 'director', '_cast')
+    list_display = ('_image', 'title', 'rating', 'director', '_cast')
 
     def _cast(self, obj):
         return ', '.join([c.name for c in obj.cast.all()])

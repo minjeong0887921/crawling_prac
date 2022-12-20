@@ -6,7 +6,7 @@ class Movie(models.Model):
     director = models.CharField('DIRECTOR', max_length=50)
     cast = models.ManyToManyField('ACTOR', blank=True)
     image = models.ImageField('IMAGE')
-    point = models.FloatField('POINT')
+    rating = models.FloatField('rating')
 
     def __str__(self):
         return self.title 

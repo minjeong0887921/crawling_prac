@@ -1,0 +1,13 @@
+* {
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+.wrap {
+    max-width: 1200px;
+    width: 95%;
+    margin: 20px auto 0 auto;
+}
+
+.card-cast {
+    color: grey;
+}
